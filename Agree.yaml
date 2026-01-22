@@ -1,4 +1,4 @@
-new_user: false
+new_user: true
 user_agreed: true
 permissions:
   file_read: true
@@ -14,7 +14,7 @@ permissions:
   network_external: false
 ollama:
   host: http://localhost:11434
-  default_model: phi4:latest
+  default_model:
   timeout: 120
   stream: true
 agent:
@@ -37,3 +37,4 @@ safety:
   - /boot
   - C:\Windows
   - C:\Program Files
+
