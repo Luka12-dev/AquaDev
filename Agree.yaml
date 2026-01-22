@@ -1,0 +1,39 @@
+new_user: false
+user_agreed: true
+permissions:
+  file_read: true
+  file_write: true
+  file_delete: true
+  file_modify: true
+  dir_create: true
+  dir_delete: true
+  dir_list: true
+  execute_python: true
+  execute_shell: true
+  network_local: true
+  network_external: false
+ollama:
+  host: http://localhost:11434
+  default_model: phi4:latest
+  timeout: 120
+  stream: true
+agent:
+  name: AquaDev
+  version: 1.0.0
+  max_context_length: 8192
+  save_history: true
+  history_file: chat_history.json
+interface:
+  color_enabled: true
+  show_timestamps: false
+  prompt_symbol: '>>>'
+safety:
+  confirm_delete: true
+  backup_before_modify: false
+  auto_execute_file_ops: true
+  restricted_paths:
+  - /etc
+  - /sys
+  - /boot
+  - C:\Windows
+  - C:\Program Files
